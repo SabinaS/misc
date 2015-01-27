@@ -1,0 +1,19 @@
+Error: Error during sourcing of /sim/synopsys64/vcs/gui/dve/auxx/gui/common/menus/preferencesWindow.tcl
+       Tcl stack follows:
+can't find package snpsWindowFrameWork
+    while executing
+"package require snpsWindowFrameWork"
+    (in namespace eval "::" script line 4)
+    invoked from within
+"namespace eval :: [read -nonewline $f]"
+Error: [EK-CMD-013]
+can't find package snpsCommonSetup
+ Use error_info for more info.
+Error: [EK-CMD-081]
+script '/sim/synopsys64/vcs/gui/dve/auxx/gui/dve/dve.tcl' stopped at line 105 due to error.
+Error: [EK-CMD-013]
+can't access "TOPLEVELS::FRAME_CREATED": parent namespace doesn't exist
+    Use error_info for more info.
+Error: [EK-CMD-081]
+script '/sim/synopsys64/vcs/gui/dve/auxx/gui/dve/win_layout.tcl' stopped at line 13 due to error.The file 'vcdplus.vpd' was opened successfully.
+ok

@@ -1,0 +1,95 @@
+0 
+29
++cli
++define+SV
++define+VPD
++itf+/sim/synopsys64/vcs/amd64/lib/vcsdp.tab
++vcsd
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -O -I/sim/synopsys64/vcs/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=
+-Mobjects= /sim/synopsys64/vcs/amd64/lib/libvirsim.so /sim/synopsys64/vcs/amd64/lib/liberrorinf.so /sim/synopsys64/vcs/amd64/lib/libsnpsmalloc.so
+-Mout=test
+-Msaverestoreobj=/sim/synopsys64/vcs/amd64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-full64
+-gen_obj
+-line
+-o test
+-pp_used
+-sverilog
+/sim/synopsys64/vcs/amd64/bin/vcs1
+cam.sv
+cam_test.sv
+eff.sv
+51
+sysc_uni_pwd=/home/ss3912/eecs4340/lab1
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session6
+XDG_SESSION_COOKIE=49659ea38109b3cdc2390e7e0000037c-1411493624.892230-1472208746
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/
+XDG_CURRENT_DESKTOP=Unity
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+XAUTHORITY=/home/ss3912/.Xauthority
+VMR_MODE_FLAG=64
+VCS_MODE_FLAG=64
+VCS_HOME=/sim/synopsys64/vcs
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=amd64
+UNAME=/bin/uname
+UBUNTU_MENUPROXY=libappmenu.so
+TOOL_HOME=/sim/synopsys64/vcs/amd64
+SYN_DIR=/sim/synopsys64
+SYNTH_HOME=/sim/synopsys64/icc
+SYNOPSYS=/sim/synopsys64/icc
+SSH_AUTH_SOCK=/tmp/keyring-cwuiuL/ssh
+SSH_AGENT_PID=9462
+SNPSLMD_LICENSE_FILE=28100@license.cs.columbia.edu:/sim/synopsys64/vcs/flexlm//license.dat
+SESSION_MANAGER=local/santiago:@/tmp/.ICE-unix/9412,unix/santiago:/tmp/.ICE-unix/9412
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SAED_PDK_32=/sim/synopsys64/saed_mc/etc/techs/SAED_PDK_32
+SAED_MC_32_28_PDK=/sim/synopsys64/saed_mc/etc/techs/SAED_PDK_32/
+PRIMETIME_HOME=/sim/synopsys64/primetime
+PERL5LIB=/sim/synopsys64/saed_mc/lib:
+OVA_UUM=0
+MFLAGS=
+MC_HOME=/sim/synopsys64/saed_mc
+MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path
+MAKELEVEL=1
+MAKEFLAGS=
+LEDA_PATH=/sim/synopsys64/leda
+ICV_HOME_DIR=/sim/synopsys64/icv
+GPG_AGENT_INFO=/tmp/keyring-cwuiuL/gpg:0:1
+GNOME_KEYRING_CONTROL=/tmp/keyring-cwuiuL
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDMSESSION=ubuntu
+FPGA_HOME=/sim/synopsys64/fpga
+FORMALITY_HOME=/sim/synopsys64/formality
+ENV=/home/ss3912/.profile
+DESKTOP_SESSION=ubuntu
+DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-oYfc4fmImN,guid=f80d660dd298fa6d9bdc7fa200053e74
+COMPIZ_CONFIG_PROFILE=ubuntu
+COLORTERM=gnome-terminal
+CDPATH=:/home/ss3912
+0
+4
+1411162210 eff.sv
+1411169628 cam_test.sv
+1411494560 cam.sv
+1322023114 /sim/synopsys64/vcs/amd64/lib/vcsdp.tab
+4
+0 
+1322023672 /sim/synopsys64/vcs/amd64/lib/libvirsim.so
+1322023397 /sim/synopsys64/vcs/amd64/lib/liberrorinf.so
+1322023255 /sim/synopsys64/vcs/amd64/lib/libsnpsmalloc.so
+1411501479 test.daidir

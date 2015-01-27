@@ -1,0 +1,3 @@
+module camtest();
+
+reg[]

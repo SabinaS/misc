@@ -1,0 +1,153 @@
+/* 
+* tlist.h
+*/
+
+#ifndef __TLIST_H__
+#define __TLIST_H__
+
+using namespace std;
+#include <algorithm>
+#include <iostream>
+#include <list> 
+
+template <typename T>
+class TList;
+
+template <typename T>
+ostream& operator<<(ostream& os, const TList<T>& rhs); 
+
+template <typename T> 
+TList<T>& operator+=(const TList<T>& l1, const TList<T>& l2); 
+ 
+
+template <typename T>
+class TList
+{
+
+	public:
+		friend ostream& operator<< <T>(ostream& os, const TList<T>& rhs);  
+		int size() const; 
+		T& operator[](int i); 
+		TList<T> operator+(const TList<T>& l2); 
+		friend TList<T>& operator+= <T>(const TList<T>& l1, const TList<T>& l2); 
+		void reverse(); 
+		void addFront( const T& s); 
+		T popFront(); 
+		const T& operator[](int i) const; 
+	
+	private: 
+		list<T> list1; 
+
+}; //end TList 
+
+/* Basic 4 functions are fine as complier-generated 
+* hence we do not need to rewrite them again
+*/
+
+
+
+template <typename T>
+ostream& operator<<(ostream& os, const TList<T>& rhs)
+{
+	os << "{ ";
+	typename list<T>::const_iterator i; //getting pointer to first element 
+	for (i = rhs.list1.begin(); i != rhs.list1.end(); ++i) //iterating through entire list 
+		os << *i << " ";
+	os << "}";
+	return os; 
+}
+
+
+//size function 
+template <typename T>
+int inline TList<T>::size() const 
+{
+	return list1.size(); 
+
+}//end size 
+
+//addFront function
+template <typename T>
+void TList<T>::addFront( const T& s)
+{
+	list1.push_front(s); 
+	
+ 
+	
+}//end addFront
+
+
+//popFront function
+template <typename T>
+T TList<T>::popFront()
+{
+	T s = list1.front(); 
+	list1.pop_front();
+		
+	return s; 	
+	
+}//end popFront 
+
+
+//reverse function
+template <typename T>
+void inline TList<T>::reverse()
+{
+	list1.reverse(); 
+	
+}//end reverse 
+
+
+//operator +=
+template <typename T>
+TList<T>& operator+=(const TList<T>& l3, const TList<T>& l2)
+{
+	TList<T>& temp = (TList<T>&) l3; 
+	TList<T>& temp2 = (TList<T>&) l2;
+	typename list<T>::iterator it; //getting pointer to first element 
+	it = temp.list1.begin(); 
+ 
+	temp.list1.reverse(); 
+	temp2.list1.reverse(); 
+	temp.list1.insert(it, l2.list1.begin(), l2.list1.end()); 
+	temp.list1.reverse();
+	temp2.list1.reverse();
+	return temp;  
+		
+}//end += 
+
+//operator +
+template <typename T>
+TList<T> TList<T>::operator+(const TList<T>& l2)
+{ 
+	TList<T> temp = *this; 
+	temp += l2; 
+	return temp; 
+}//end + 
+
+
+
+
+//operator []
+
+template <typename T>
+T& TList<T>::operator[](int i) 
+{
+	int count=0; 
+ 	typename list<T>::iterator i1; //getting pointer to first element  
+	i1 = list1.begin(); 
+	while(count++ < i)
+		i1++; 
+	return *i1; 
+
+	
+}//end [] 
+
+//operator [] const 
+template <typename T>
+const T& TList<T>::operator[](int i) const
+{
+	return operator[](i); 
+}//end const [] 
+
+#endif

@@ -1,0 +1,9 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db   -file  vcdplus.vpd
